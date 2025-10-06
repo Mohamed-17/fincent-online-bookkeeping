@@ -43,7 +43,7 @@ function MobileMenu() {
               ease: easeInOut,
               layout: { duration: 0.25 },
             }}
-            className="p-5 absolute top-17 space-y-5 left-0 w-full h-[calc(100vh-68px)] bg-main-bg overflow-hidden"
+            className="p-5 absolute top-17 space-y-5 left-0 w-full h-[calc(100vh-68px)] bg-main-bg"
           >
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
