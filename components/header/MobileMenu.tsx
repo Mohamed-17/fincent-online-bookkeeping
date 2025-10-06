@@ -43,7 +43,7 @@ function MobileMenu() {
               ease: easeInOut,
               layout: { duration: 0.25 },
             }}
-            className="p-5 absolute top-17 space-y-5 left-0 w-full h-[calc(100vh-68px)] bg-main-bg"
+            className="flex flex-col p-5 absolute top-17 space-y-5 left-0 w-full h-[calc(100vh-68px)] bg-main-bg overflow-y-scroll"
           >
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
@@ -137,7 +137,7 @@ function MobileMenu() {
             <Link href={"/pricing"} className="text-3xl text-white ">
               Pricing
             </Link>
-            <div className=" flex items-center justify-center gap-2 w-full absolute bottom-2 left-0 px-2">
+            <div className=" flex  items-end justify-center gap-2 w-full flex-1">
               <div className="flex-1">
                 <Button className=" bg-bg-second-purple text-white w-full">
                   Watch a Demo
