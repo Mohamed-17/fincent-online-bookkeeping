@@ -3,12 +3,12 @@ import React from "react";
 
 function Container({
   children,
-  clasName,
+  className,
 }: {
   children: React.ReactNode;
-  clasName?: string;
+  className?: string;
 }) {
-  return <div className={cn("container", clasName)}>{children}</div>;
+  return <div className={cn("container", className)}>{children}</div>;
 }
 
 export default Container;

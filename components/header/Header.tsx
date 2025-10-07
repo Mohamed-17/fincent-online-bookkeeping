@@ -5,11 +5,12 @@ import NavLinks from "./NavLinks";
 import Login from "./Login";
 import { Button } from "../ui/button";
 import MobileMenu from "./MobileMenu";
+import ProjectButton from "../ProjectButton";
 export default function Header() {
   return (
-    <header className="relative z-50 bg-main-bg shadow-sm">
+    <header className=" z-50 bg-main-bg shadow-sm  ">
       <Container>
-        <div className="h-[70px] md:h-[80px] lg:h-[92px] flex items-center">
+        <div className="h-[70px] md:h-[80px] relative w-full lg:h-[92px] flex items-center  ">
           <div className="flex justify-between items-center px-5 w-full">
             <Logo />
             <NavLinks />
@@ -17,9 +18,7 @@ export default function Header() {
               <Login />
               <div>
                 {" "}
-                <Button className="bg-white py-6 px-5 cursor-pointer font-semibold text-black hover:bg-main-purple hover:text-white hoverEffect">
-                  Book a demo
-                </Button>
+                <ProjectButton context="Book a demo" />
               </div>
             </div>
             <MobileMenu />

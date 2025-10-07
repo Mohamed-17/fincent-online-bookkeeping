@@ -44,25 +44,25 @@ export default function NavLinks() {
         className="absolute left-0 top-full w-full"
         onMouseLeave={() => setOpenMenu(null)}
       >
-        <AnimatePresence mode="wait">
-          {menuData && (
-            <motion.div
-              key={openMenu}
-              layout
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-                layout: { duration: 0.25 },
-              }}
-              className="relative z-40 bg-main-bg border-t border-white/10 backdrop-blur-md shadow-lg overflow-hidden"
-            >
-              <div className="absolute inset-0  backdrop-blur-md -z-10 rounded-b-xl"></div>
+        <Container>
+          <AnimatePresence mode="wait">
+            {menuData && (
+              <motion.div
+                key={openMenu}
+                layout
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  layout: { duration: 0.25 },
+                }}
+                className="absolute top-0 z-40 w-full bg-main-bg border-t border-white/10 backdrop-blur-md shadow-lg overflow-hidden"
+              >
+                <div className="absolute inset-0   backdrop-blur-md -z-10 rounded-b-xl"></div>
 
-              <Container>
-                <div className="px-5 py-8">
+                <div className="px-5 py-8 w-full">
                   <h6 className="uppercase text-[10px] mb-5 text-text-light/70 font-semibold">
                     {menuData.title}
                   </h6>
@@ -120,10 +120,10 @@ export default function NavLinks() {
                     </div>
                   </div>
                 </div>
-              </Container>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </Container>
       </div>
     </>
   );
