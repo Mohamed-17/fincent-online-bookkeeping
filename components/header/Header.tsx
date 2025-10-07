@@ -3,12 +3,11 @@ import Container from "../Container";
 import Logo from "../Logo";
 import NavLinks from "./NavLinks";
 import Login from "./Login";
-import { Button } from "../ui/button";
 import MobileMenu from "./MobileMenu";
 import ProjectButton from "../ProjectButton";
 export default function Header() {
   return (
-    <header className=" z-50 bg-main-bg shadow-sm  ">
+    <header className=" z-50 bg-main-bg  sticky top-0 left-0 ">
       <Container>
         <div className="h-[70px] md:h-[80px] relative w-full lg:h-[92px] flex items-center  ">
           <div className="flex justify-between items-center px-5 w-full">
