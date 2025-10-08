@@ -19,7 +19,7 @@ function MobileMenu() {
         {" "}
         <Button
           onClick={() => setToggleMenu((prev) => !prev)}
-          className="bg-black rounded-md hover:bg-black cursor-pointer"
+          className="bg-black text-white rounded-md hover:bg-black cursor-pointer"
         >
           {toggleMenu ? (
             <span className="flex gap-1 items-center">

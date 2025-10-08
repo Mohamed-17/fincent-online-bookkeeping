@@ -1,11 +1,17 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import Container from "../Container";
 import { Sparkles } from "lucide-react";
 import ProjectButton from "../ProjectButton";
 import Image from "next/image";
+import { ThemeContext, useTheme } from "@/context/Toggle";
 function Hero() {
+  const { theme } = useTheme();
+
   return (
-    <main className="min-h-screen flex flex-col  items-center justify-center bg-main-bg">
+    <main
+      className={`min-h-screen flex flex-col  items-center justify-center ${theme} `}
+    >
       <Container className="flex flex-col gap-5 lg:gap-0 items-center px-5">
         <div className="bg-black text-white rounded-br-3xl lg:rounded-br-none rounded-l-3xl rounded-bl-3xl rounded-t-3xl px-5 py-10 w-full  space-y-8">
           <h1 className="text-3xl md:text-7xl lg:text-[116px] box font-bold leading-tight ">
@@ -28,7 +34,9 @@ function Hero() {
         </div>
 
         <div className="flex flex-col gap-5 md:gap-0  lg:flex-row w-full overflow-hidden ">
-          <div className="flex-1 bg-main-bg rounded-3xl w-full  flex items-center justify-center lg:pt-10 lg:px-10 h-full">
+          <div
+            className={`flex-1 bg-main-bg rounded-3xl w-full  flex items-center justify-center lg:pt-10 lg:px-10 h-full ${theme}`}
+          >
             <Image
               src="/hero-home.jpg"
               width={600}

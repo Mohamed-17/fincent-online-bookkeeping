@@ -23,6 +23,20 @@
 .noTranslationEffect {
   transform: translate(0px, 0px);
 }
+/* Theme transitions */
+* {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+}
+
+.dark {
+  background-color: var(--color-main-bg);
+  color: white;
+}
+.light {
+  background-color: white;
+  color: black;
+}
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

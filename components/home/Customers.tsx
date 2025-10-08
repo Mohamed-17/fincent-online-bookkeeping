@@ -5,18 +5,19 @@ import { customers } from "@/data";
 import Image from "next/image";
 import { Circle, Star } from "lucide-react";
 import FadeInSection from "../ComponentFade";
+import { useTheme } from "@/context/Toggle";
 
 function Customers() {
   const [current, SetCurrent] = useState(0);
+  const { theme } = useTheme();
   useEffect(() => {
     const interval = setInterval(() => {
       SetCurrent((prev: number) => (prev < 2 ? prev + 1 : 0));
     }, 3000);
-
     return () => clearInterval(interval);
   }, [current]);
   return (
-    <Container className="px-5 md:px-15">
+    <Container className="px-5 md:px-15 ">
       <div className="text-white mt-20  px-2">
         <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-5 w-full">
           <div className="relative md:flex  w-[100%]  min-h-[250px]">
@@ -55,8 +56,18 @@ function Customers() {
                       ))}
                     </div>
 
-                    <h5 className="text-base">{customer.advice}</h5>
-                    <p className="text-sm flex items-center gap-2 justify-center text-gray-300">
+                    <h5
+                      className={`${
+                        theme === "light" ? "text-black" : "text-white"
+                      }`}
+                    >
+                      {customer.advice}
+                    </h5>
+                    <p
+                      className={`text-sm flex items-center gap-2 justify-center ${
+                        theme === "dark" ? "text-gray-300" : "text-gray-700"
+                      }`}
+                    >
                       <span>{customer.name}</span>
                       <span className="text-xs">•</span>
                       <span>{customer.job}</span>
