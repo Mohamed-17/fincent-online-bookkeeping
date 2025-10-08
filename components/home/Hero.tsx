@@ -1,10 +1,10 @@
 "use client";
-import React, { useContext } from "react";
+import React from "react";
 import Container from "../Container";
 import { Sparkles } from "lucide-react";
 import ProjectButton from "../ProjectButton";
 import Image from "next/image";
-import { ThemeContext, useTheme } from "@/context/Toggle";
+import { useTheme } from "@/context/Toggle";
 function Hero() {
   const { theme } = useTheme();
 

@@ -1,29 +1,13 @@
-"use client";
-import React, { useEffect, useRef } from "react";
 import Container from "../Container";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { useTheme } from "@/context/Toggle";
 
 function Books() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { setTheme } = useTheme();
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setTheme("light");
-      } else {
-        setTheme("dark");
-      }
-    });
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [setTheme]);
   return (
     <div className="bg-white relative ">
-      <Container className="rounded-md bg-white box h-100 absolute -top-10  lg:left-90 ">
+      <Container className="rounded-md bg-white box h-40 md:h-120 absolute -top-30  lg:left-90 ">
         <div className="p-5 flex flex-col   items-center md:items-start md:flex-row md:gap-5">
-          <div className="flex-1 py-10 px-5 text-black space-y-2" ref={ref}>
+          <div className="flex-1 py-10 px-5 text-black space-y-2">
             <p className="hidden lg:block text-xs">
               Human-assisted bookkeeping
             </p>

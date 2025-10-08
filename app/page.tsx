@@ -11,10 +11,12 @@ export function HomePage() {
     <div className={`${theme}`}>
       <Hero />
       <Customers />
-      <div className="mt-5 w-full text-center text-text-light pb-20">
+      <div className="mt-5 w-full text-center text-text-light pb-40">
         Businesses, big and small, trust Fincent with their books
       </div>
-      <Books />
+      <div className="bg-white">
+        <Books />
+      </div>
     </div>
   );
 }
