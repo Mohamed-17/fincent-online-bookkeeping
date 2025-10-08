@@ -211,3 +211,28 @@ export const MENU_CONTENT = {
     ],
   },
 };
+
+export const customers = [
+  {
+    stars: 5,
+    advice:
+      "For us, Fincent is not just a service; they are a strategic partner in our growth story.",
+    name: "Cody Franklin",
+    job: "Unified IT",
+    image: "/suits1.jpg",
+  },
+  {
+    stars: 5,
+    advice: "“Fincent has transformed my financial management.”",
+    name: "Cody Franklin",
+    job: "Unified IT",
+    image: "/suits2.jpg",
+  },
+  {
+    stars: 5,
+    advice: "“Super easy, super supportive, and super responsive”",
+    name: "Grant Sapkin",
+    job: "Burrrst",
+    image: "/suits3.jpg",
+  },
+];

@@ -3,16 +3,15 @@ import Container from "../Container";
 import { Sparkles } from "lucide-react";
 import ProjectButton from "../ProjectButton";
 import Image from "next/image";
-
 function Hero() {
   return (
     <main className="min-h-screen flex flex-col  items-center justify-center bg-main-bg">
       <Container className="flex flex-col gap-5 lg:gap-0 items-center px-5">
         <div className="bg-black text-white rounded-br-3xl lg:rounded-br-none rounded-l-3xl rounded-bl-3xl rounded-t-3xl px-5 py-10 w-full  space-y-8">
-          <h1 className="text-3xl md:text-7xl lg:text-[116px]  font-bold leading-tight ">
+          <h1 className="text-3xl md:text-7xl lg:text-[116px] box font-bold leading-tight ">
             Better bookkeeping
           </h1>
-          <p className="text-gray-300 max-w-2xl">
+          <p className="text-gray-300 max-w-2xl box">
             Meet Fincent — The only solution that combines beautiful software,
             human bookkeepers, and obsessive customer support. Now you can grow
             your business, keep costs down, and still have time for life.
@@ -34,28 +33,29 @@ function Hero() {
               src="/hero-home.jpg"
               width={600}
               height={400}
+              priority
               alt="hero-image"
               className="md:rounded-xl rounded-3xl shadow-lg  w-full  md:object-cover"
             />
           </div>
           <div className="flex-1 rounded-xl md:rounded-none  bg-black text-white  space-y-4 flex flex-col ">
             <div className="py-15 px-10 space-y-10 ">
-              <h2 className="text-4xl md:text-6xl">
+              <h2 className="text-4xl md:text-6xl box">
                 Leave the old ways behind
               </h2>
-              <p className="flex flex-col gap-2">
+              <p className="flex flex-col gap-2 box">
                 <span className="text-3xl md:text-6xl">240+</span>{" "}
                 <span className="text-text-light">
                   hours freed up every year
                 </span>
               </p>
-              <p className="flex flex-col gap-2">
+              <p className="flex flex-col gap-2 box">
                 <span className="text-3xl md:text-6xl">24x7</span>{" "}
                 <span className="text-text-light">
                   access to financial reports and insights
                 </span>
               </p>
-              <p className="flex flex-col gap-2">
+              <p className="flex flex-col gap-2 box">
                 <span className="text-3xl md:text-6xl">$11k+</span>{" "}
                 <span className="text-text-light">
                   saved annually on bookkeeping and taxes

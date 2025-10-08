@@ -129,7 +129,51 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+.box {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.5s ease-out forwards;
+}
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideOut {
+  animation: slideOut 0.8s ease-in-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.8s ease-in-out forwards;
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
