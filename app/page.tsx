@@ -5,7 +5,7 @@ import Hero from "@/components/home/Hero";
 import { useTheme } from "@/context/Toggle";
 import React from "react";
 
-export function HomePage() {
+function Page() {
   const { theme } = useTheme();
   return (
     <div className={`${theme}`}>
@@ -21,4 +21,4 @@ export function HomePage() {
   );
 }
 
-export default HomePage;
+export default Page;
