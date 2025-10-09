@@ -24,7 +24,7 @@ function Customers() {
             {customers?.map((customer, index) => (
               <div
                 key={index}
-                className={`absolute md:relative inset-0 flex flex-col items-center text-center gap-5 transition-opacity duration-500 ${
+                className={`absolute md:relative inset-0 lg:w-1/3  flex flex-col items-center text-center gap-5 transition-opacity duration-500 ${
                   current !== index
                     ? "opacity-0 pointer-events-none md:opacity-100"
                     : "opacity-100"
