@@ -10,8 +10,8 @@ import { useTheme } from "@/context/Toggle";
 export default function Header() {
   const { theme } = useTheme();
   return (
-    <header className={`${theme} z-50 sticky top-0 left-0   `}>
-      <Container className={`${theme === "light" && "dark rounded-b-lg"}`}>
+    <header className={`${theme} z-50 sticky top-0 left-0 `}>
+      <Container className={`${theme === "light" && "dark md:rounded-b-lg"}`}>
         <div className="h-[70px] md:h-[80px] relative w-full lg:h-[92px] flex items-center  ">
           <div className="flex justify-between items-center px-5 w-full">
             <Logo />

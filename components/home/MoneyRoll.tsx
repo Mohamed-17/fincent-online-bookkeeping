@@ -1,25 +1,10 @@
-"use client";
-import { useTheme } from "@/context/Toggle";
 import Container from "../Container";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 
 function MoneyRoll() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { setTheme } = useTheme();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setTheme("light");
-      }
-    });
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [setTheme]);
   return (
-    <div className="relative bg-white  h-40 md:h-140 pt-20" ref={ref}>
+    <div className="relative bg-white   pt-20">
       <Container className="rounded-md bg-main-bg box ">
         <div className="p-5 flex flex-col   items-center md:items-start md:flex-row-reverse md:gap-5 ">
           <div className="flex-1 py-10 px-5 text-black space-y-2 box">
