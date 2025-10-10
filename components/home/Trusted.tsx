@@ -10,7 +10,7 @@ function Trusted() {
           Trusted by <span className="text-main-purple">legendary</span>{" "}
           business owners
         </div>
-        <div className="flex flex-col lg:flex-row gap-3 pt-20 justify-center items-center lg:justify-start lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-5 pt-20 justify-center items-center lg:justify-start lg:items-start">
           <div className="flex-1 px-5 lg:px-0">
             <Image
               src={"/sophia.jpg"}

@@ -10,7 +10,7 @@ function Hero() {
 
   return (
     <main
-      className={`min-h-screen flex flex-col  items-center justify-center ${theme} `}
+      className={`min-h-screen flex flex-col items-center justify-center ${theme} overflow-x-hidden w-full`}
     >
       <Container className="flex flex-col gap-5 lg:gap-0 items-center px-5">
         <div className="bg-black text-white rounded-br-3xl lg:rounded-br-none rounded-l-3xl rounded-bl-3xl rounded-t-3xl px-5 py-10 w-full  space-y-8">

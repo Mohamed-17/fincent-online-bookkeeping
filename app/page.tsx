@@ -1,8 +1,10 @@
 "use client";
 import Books from "@/components/home/Books";
 import Customers from "@/components/home/Customers";
+import ExportSec from "@/components/home/ExportSec";
 import Hero from "@/components/home/Hero";
 import MoneyRoll from "@/components/home/MoneyRoll";
+import SearchSection from "@/components/home/SearchSection";
 import Taxes from "@/components/home/Taxes";
 import Trusted from "@/components/home/Trusted";
 import { useTheme } from "@/context/Toggle";
@@ -21,8 +23,10 @@ function Page() {
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [setTheme]);
+  console.log(theme);
+
   return (
-    <div className={`${theme}`}>
+    <div className={`${theme} pt-[70px] md:pt-[80px] lg:pt-[92px]`}>
       <Hero />
       <Customers />
       <div className="mt-5 w-full text-center text-text-light pb-40">
@@ -33,6 +37,8 @@ function Page() {
         <MoneyRoll />
         <Taxes />
         <Trusted />
+        <SearchSection />
+        <ExportSec />
       </div>
     </div>
   );
