@@ -236,3 +236,38 @@ export const customers = [
     image: "/suits3.jpg",
   },
 ];
+export const founders = [
+  {
+    title:
+      " “Fincent is intuitive, easy to use, and a lifesaver. It has significantly reduced costs and saved us countless hours on financial tasks.”",
+    image: "/kelsey.jpg",
+    name: "Kelsey WilLock",
+    position: "Founder, Aura Finance",
+    score1: "70%",
+    task1: "transactions auto-categorized",
+    score2: "30%",
+    task2: "reports created",
+  },
+  {
+    title:
+      " “Fincent, a reliable crew, handled my books with care, offering invaluable financial clarity on our business journey.”",
+    image: "/gaia.jpg",
+    name: "Gaia Richards",
+    position: "Founder, Blue Earth Healing",
+    score1: "80%",
+    task1: "Reduction in Manual Financial Tasks",
+    score2: "60%",
+    task2: "Boost in Tax Compliance",
+  },
+  {
+    title:
+      "“Fincent transformed our finances, enabling us to innovate. Their dedication makes them a strategic partner in our growth.”",
+    image: "/cody.jpg",
+    name: "Cody Franklin",
+    position: "Founder, Unified IT",
+    score1: "80%",
+    task1: "transactions auto-categorized",
+    score2: "30%",
+    task2: "reports created",
+  },
+];

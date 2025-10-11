@@ -7,6 +7,7 @@ import MoneyRoll from "@/components/home/MoneyRoll";
 import SearchSection from "@/components/home/SearchSection";
 import Taxes from "@/components/home/Taxes";
 import Trusted from "@/components/home/Trusted";
+import Slider from "@/components/Slider";
 import { useTheme } from "@/context/Toggle";
 import React, { useEffect, useRef } from "react";
 
@@ -39,6 +40,7 @@ function Page() {
         <Trusted />
         <SearchSection />
         <ExportSec />
+        <Slider />
       </div>
     </div>
   );
